@@ -1,0 +1,289 @@
+{"intents": [
+    {"tag": "greeting",
+     "patterns": ["Hi there", "How are you", "Is anyone there?","Hey","Hola", "Hello", "Good day"],
+     "responses": ["Hello, thanks for asking", "Good to see you again", "Hi there, how can I help?"],
+     "context": [""]
+    },
+    {"tag": "check condition",
+        "patterns": ["no","i am not fine","not good","not well"],
+        "responses": ["say 'list symptoms' to proceed"],
+        "context": [""]
+       },
+    {"tag": "list symptoms",
+        "patterns": ["list symptoms"],
+        "responses": ["1:feeling nervious 2:sadness 3:fear of abandonment 4:fear of dirt 51:list more"],
+        "context": [""]
+       },
+    {"tag": "51",
+        "patterns": ["51"],
+        "responses": ["5:panic 6:hopelesness 7:extream emotional swing 8:needing things orderly 52:list more"],
+        "context": [""]
+       },
+    {"tag": "52",
+        "patterns": ["52"],
+        "responses": ["9:increase heart rate 10:lack of intrest 11:feeling suspicious 12:unwanted thought 53:list more"],
+        "context": [""]
+       },
+    {"tag": "53",
+        "patterns": ["53"],
+        "responses": ["13:trouble sleeping 14:sucidal thoughts 15:unexplained physical problems 16:including agregation 54:more"],
+        "context": [""]
+       },
+    {"tag": "1",
+        "patterns": ["1"],
+        "responses": ["99:are you panic?"],
+        "context": [""]
+       },
+
+    {"tag": "99",
+        "patterns": ["99"],
+        "responses": ["can you sleep? (y/n)"],
+        "context": [""]
+       },
+    {"tag": "y",
+        "patterns": ["y"],
+        "responses": ["You have anxiety. Don't worry just take care and stay motivated."],
+        "context": [""]
+       },
+    {"tag": "n",
+        "patterns": ["n"],
+        "responses": ["you dont have anxiety 51:view other problems"],
+        "context": [""]
+       },
+       {"tag": "5",
+        "patterns": ["5"],
+        "responses": ["feeling nervious (y/n"],
+        "context": [""]
+       },
+
+    {"tag": "13",
+        "patterns": ["99"],
+        "responses": ["feeling nervious? (y/n)"],
+        "context": [""]
+       },
+
+    {"tag": "2",
+        "patterns": ["2"],
+        "responses": ["97:are you feeling hoplessness?"],
+        "context": [""]
+       },
+
+    {"tag": "97",
+        "patterns": ["97"],
+        "responses": ["do you get sucidal thoughts? (yea/naa)"],
+        "context": [""]
+       },
+    {"tag": "yaa",
+        "patterns": ["yaa"],
+        "responses": ["You have depression. Don't worry, Stay with your loved once and be explored towards society"],
+        "context": [""]
+       },
+    {"tag": "naa",
+        "patterns": ["naa"],
+        "responses": ["you dont have depression 53:view other problems"],
+        "context": [""]
+       },
+       {"tag": "6",
+        "patterns": ["6"],
+        "responses": ["having sucidal thoughts  (yaa/naa"],
+        "context": [""]
+       },
+
+    {"tag": "10",
+        "patterns": ["10"],
+        "responses": ["feeling sad (yaa/naa)"],
+        "context": [""]
+       },
+    {"tag": "14",
+        "patterns": ["14"],
+        "responses": ["have you lost intrest in everything (yaa/naa)"],
+        "context": [""]
+       },
+
+    {"tag": "3",
+        "patterns": ["3"],
+        "responses": ["96: "],
+        "context": [""]
+       },
+
+    {"tag": "96",
+        "patterns": ["96"],
+        "responses": ["do you get sucidal thoughts? (yea/naa)"],
+        "context": [""]
+       },
+    {"tag": "True",
+        "patterns": ["True"],
+        "responses": ["You have BPD(borderlined personality disorder). Don't worry, Trut each other"],
+        "context": [""]
+       },
+    {"tag": "false",
+        "patterns": ["false"],
+        "responses": ["you dont have BPD look for other things"],
+        "context": [""]
+       },
+       {"tag": "7",
+        "patterns": ["7"],
+        "responses": ["feeling suspicious  (yaa/naa"],
+        "context": [""]
+       },
+
+    {"tag": "11",
+        "patterns": ["10"],
+        "responses": ["Do you have extreame mood swing (true/false)"],
+        "context": [""]
+       },
+    {"tag": "15",
+        "patterns": ["14"],
+        "responses": ["do you have fear of abandant (true/false)"],
+        "context": [""]
+       },
+
+    
+
+
+       
+    {"tag": "4",
+        "patterns": ["4"],
+        "responses": ["95:do you require everything in an sequential manner "],
+        "context": [""]
+       },
+
+    {"tag": "95",
+        "patterns": ["95"],
+        "responses": ["do you have unwanted thoughts? (s/noo)"],
+        "context": [""]
+       },
+    {"tag": "s",
+        "patterns": ["s"],
+        "responses": ["You have OCD(obsessive complexive disorder. You need to change your behaviour and cope up with the society"],
+        "context": [""]
+       },
+    {"tag": "noo",
+        "patterns": ["noo"],
+        "responses": ["you dont have OCD look for other things"],
+        "context": [""]
+       },
+       {"tag": "8",
+        "patterns": ["8"],
+        "responses": ["do you have unwanted thoughts (s/noo)"],
+        "context": [""]
+       },
+
+    {"tag": "12",
+        "patterns": ["12"],
+        "responses": ["Do you have fear of condaniment (s/noo)"],
+        "context": [""]
+       },
+    {"tag": "16",
+        "patterns": ["16"],
+        "responses": ["do you have unwanted thoughts? (s/noo)"],
+        "context": [""]
+       },
+
+
+
+
+
+
+    {"tag": "",
+        "patterns": [""],
+        "responses": [""],
+        "context": [""]
+       },
+    {"tag": "",
+        "patterns": [""],
+        "responses": [""],
+        "context": [""]
+       },
+    {"tag": "",
+        "patterns": [""],
+        "responses": [""],
+        "context": [""]
+       },
+    {"tag": "",
+        "patterns": [""],
+        "responses": [""],
+        "context": [""]
+       },
+    {"tag": "goodbye",
+     "patterns": ["Bye", "See you later", "Goodbye", "Nice chatting to you, bye", "Till next time"],
+     "responses": ["See you!", "Have a nice day", "Bye! Come back again soon."],
+     "context": [""]
+    },
+    {"tag": "thanks",
+     "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me"],
+     "responses": ["Happy to help!", "Any time!", "My pleasure"],
+     "context": [""]
+    },
+    {"tag": "noanswer",
+     "patterns": [],
+     "responses": ["Sorry, can't understand you", "Please give me more info", "Not sure I understand"],
+     "context": [""]
+    },
+    {"tag": "options",
+     "patterns": ["How you could help me?", "What you can do?", "What help you provide?", "How you can be helpful?", "What support is offered"],
+     "responses": ["I can aid you regarding you about mental health issues. Tell me about your symptoms or say 'list symptoms' to proceed"],
+     "context": [""]
+    },
+    {"tag": "adverse_drug",
+     "patterns": ["How to check Adverse drug reaction?", "Open adverse drugs module", "Give me a list of drugs causing adverse behavior", "List all drugs suitable for patient with adverse reaction", "Which drugs dont have adverse reaction?" ],
+     "responses": ["Navigating to Adverse drug reaction module"],
+     "context": [""]
+    },
+    {"tag": "blood_pressure",
+     "patterns": ["Open blood pressure module", "Task related to blood pressure", "Blood pressure data entry", "I want to log blood pressure results", "Blood pressure data management" ],
+     "responses": ["Navigating to Blood Pressure module"],
+     "context": [""]
+    },
+    {"tag": "blood_pressure_search",
+     "patterns": ["I want to search for blood pressure result history", "Blood pressure for patient", "Load patient blood pressure result", "Show blood pressure results for patient", "Find blood pressure results by ID" ],
+     "responses": ["Please provide Patient ID", "Patient ID?"],
+     "context": ["search_blood_pressure_by_patient_id"]
+    },
+    {"tag": "search_blood_pressure_by_patient_id",
+     "patterns": [],
+     "responses": ["Loading Blood pressure result for Patient"],
+     "context": [""]
+    },
+    {"tag": "pharmacy_search",
+     "patterns": ["Find me a pharmacy", "Find pharmacy", "List of pharmacies nearby", "Locate pharmacy", "Search pharmacy" ],
+     "responses": ["Please provide pharmacy name"],
+     "context": ["search_pharmacy_by_name"]
+    },
+    {"tag": "search_pharmacy_by_name",
+     "patterns": [],
+     "responses": ["Loading pharmacy details"],
+     "context": [""]
+    },
+    {"tag": "hospital_search",
+     "patterns": ["Lookup for hospital", "Searching for hospital to transfer patient", "I want to search hospital data", "Hospital lookup for patient", "Looking up hospital details" ],
+     "responses": ["Please provide hospital name or location"],
+     "context": ["search_hospital_by_params"]
+    },
+    {"tag": "search_hospital_by_params",
+     "patterns": [],
+     "responses": ["Please provide hospital type"],
+     "context": ["search_hospital_by_type"]
+    },
+    {"tag": "search_hospital_by_type",
+     "patterns": [],
+     "responses": ["Loading hospital details"],
+     "context": [""]
+    },
+    {"tag": "yes",
+        "patterns": ["yes"],
+        "responses": ["Have a great day"],
+        "context": [""]
+       },
+    {"tag": "",
+        "patterns": [""],
+        "responses": [""],
+        "context": [""]
+       },
+    {"tag": "",
+        "patterns": [""],
+        "responses": [""],
+        "context": [""]
+       }
+]
+}
